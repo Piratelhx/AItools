@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 导航</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1e24;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #282c34;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575d69;
+        }
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #2e3138;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#">首页</a>
+        <a href="#">AI绘画</a>
+        <a href="#">AI文档</a>
+        <a href="#">AI图像</a>
+        <a href="#">综合应用</a>
+    </div>
+    <div class="main-content">
+        <h1>AI 导航</h1>
+        <div class="grid-container">
+            <div class="card">
+                <h2>文心一格</h2>
+                <p>轻松智能文档生成</p>
+            </div>
+            <div class="card">
+                <h2>秘塔写作猫</h2>
+                <p>多人协作的智能写作工具</p>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+</body>
+</html>
