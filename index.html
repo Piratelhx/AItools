@@ -3,51 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 导航</title>
+    <title>AI 工具集</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1c1e24;
-            color: #fff;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
         }
         .sidebar {
-            width: 200px;
-            background-color: #282c34;
+            width: 220px;
+            background-color: #fff;
             position: fixed;
             height: 100%;
             padding-top: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            border-right: 1px solid #ddd;
         }
         .sidebar a {
-            padding: 10px 15px;
+            padding: 15px 20px;
             text-decoration: none;
-            font-size: 18px;
-            color: #fff;
+            font-size: 16px;
+            color: #333;
             display: block;
+            border-bottom: 1px solid #ddd;
         }
         .sidebar a:hover {
-            background-color: #575d69;
+            background-color: #f0f0f0;
         }
         .main-content {
-            margin-left: 220px;
+            margin-left: 240px;
             padding: 20px;
         }
+        .main-content h1 {
+            margin-top: 0;
+        }
         .card {
-            background-color: #2e3138;
-            border: 1px solid #444;
+            background-color: #fff;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            padding: 15px;
+            padding: 20px;
             margin-bottom: 20px;
             text-decoration: none;
-            color: #fff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .card:hover {
-            background-color: #3a3f47;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
         .card h2 {
-            margin-top: 0;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+        .card p {
+            margin: 0;
+            flex-grow: 1;
         }
         .grid-container {
             display: grid;
@@ -58,14 +72,15 @@
 </head>
 <body>
     <div class="sidebar">
-        <a href="#">首页</a>
-        <a href="#">AI绘画</a>
-        <a href="#">AI文档</a>
-        <a href="#">AI图像</a>
-        <a href="#">综合应用</a>
+        <a href="#ai-search">AI搜索</a>
+        <a href="#ai-chat">AI聊天</a>
+        <a href="#ai-office">AI办公</a>
+        <a href="#ai-music">AI音乐</a>
     </div>
     <div class="main-content">
-        <h1>AI 导航</h1>
+        <h1>AI 工具集</h1>
+
+        <h2 id="ai-search">AI搜索</h2>
         <div class="grid-container">
             <a href="https://metaso.cn/" class="card" target="_blank">
                 <h2>秘塔AI</h2>
@@ -75,6 +90,18 @@
                 <h2>360搜索</h2>
                 <p>综合搜索引擎</p>
             </a>
+            <a href="https://www.tiangong.cn/" class="card" target="_blank">
+                <h2>天工搜索</h2>
+                <p>智能搜索引擎</p>
+            </a>
+            <a href="https://chatglm.cn/main/alltoolsdetail" class="card" target="_blank">
+                <h2>智谱清言</h2>
+                <p>自然语言处理工具</p>
+            </a>
+        </div>
+
+        <h2 id="ai-chat">AI聊天</h2>
+        <div class="grid-container">
             <a href="https://www.tiangong.cn/" class="card" target="_blank">
                 <h2>天工搜索</h2>
                 <p>智能搜索引擎</p>
@@ -95,6 +122,14 @@
                 <h2>豆包插件</h2>
                 <p>智能聊天插件</p>
             </a>
+        </div>
+
+        <h2 id="ai-office">AI办公</h2>
+        <div class="grid-container">
+            <a href="https://www.doubao.com/chat/" class="card" target="_blank">
+                <h2>豆包插件</h2>
+                <p>智能聊天插件</p>
+            </a>
             <a href="https://tingwu.aliyun.com/" class="card" target="_blank">
                 <h2>通义效率</h2>
                 <p>高效办公工具</p>
@@ -106,6 +141,14 @@
             <a href="https://www.elmo.chat/" class="card" target="_blank">
                 <h2>Elmo插件</h2>
                 <p>智能语音助手</p>
+            </a>
+        </div>
+
+        <h2 id="ai-music">AI音乐</h2>
+        <div class="grid-container">
+            <a href="https://www.tiangong.cn/" class="card" target="_blank">
+                <h2>天工搜索</h2>
+                <p>智能搜索引擎</p>
             </a>
             <a href="https://suno.com/" class="card" target="_blank">
                 <h2>Suno</h2>
