@@ -3,145 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 工具集</title>
+    <title>AI 导航</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #1e1e1e;
+            color: white;
             margin: 0;
             padding: 0;
         }
-        .sidebar {
-            width: 220px;
-            background-color: #fff;
-            position: fixed;
-            height: 100%;
-            padding-top: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            border-right: 1px solid #ddd;
+        .container {
+            display: flex;
         }
-        .main-content {
-            margin-left: 240px;
+        .sidebar {
+            width: 250px;
+            background-color: #2e2e2e;
             padding: 20px;
         }
-        .main-content h1 {
-            margin-top: 0;
+        .content {
+            flex-grow: 1;
+            padding: 20px;
         }
         .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
+            background-color: #3e3e3e;
+            border: 1px solid #555;
             border-radius: 8px;
             padding: 20px;
-            margin-bottom: 20px;
-            text-decoration: none;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
-        .card:hover {
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        .card h3 {
+            margin-top: 0;
         }
-        .card h2 {
-            margin: 0 0 10px 0;
-            font-size: 20px;
-        }
-        .card p {
-            margin: 0;
-            flex-grow: 1;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
+        .add-card {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="main-content">
-        <h1>AI 工具集</h1>
-
-        <h2>AI搜索</h2>
-        <div class="grid-container">
-            <a href="https://metaso.cn/" class="card" target="_blank">
-                <h2>秘塔AI</h2>
-                <p>智能文档生成与编辑工具</p>
-            </a>
-            <a href="https://so.360.com/" class="card" target="_blank">
-                <h2>360搜索</h2>
-                <p>综合搜索引擎</p>
-            </a>
-            <a href="https://www.tiangong.cn/" class="card" target="_blank">
-                <h2>天工搜索</h2>
-                <p>智能搜索引擎</p>
-            </a>
-            <a href="https://chatglm.cn/main/alltoolsdetail" class="card" target="_blank">
-                <h2>智谱清言</h2>
-                <p>自然语言处理工具</p>
-            </a>
+    <div class="container">
+        <div class="sidebar">
+            <h2>AI 导航</h2>
+            <ul>
+                <li>我的收藏</li>
+                <li>AI绘画</li>
+                <li>AI文本</li>
+                <li>AI趣味应用</li>
+            </ul>
+            <button class="add-card">添加卡片</button>
         </div>
-
-        <h2>AI聊天</h2>
-        <div class="grid-container">
-            <a href="https://www.tiangong.cn/" class="card" target="_blank">
-                <h2>天工搜索</h2>
-                <p>智能搜索引擎</p>
-            </a>
-            <a href="https://chatglm.cn/main/alltoolsdetail" class="card" target="_blank">
-                <h2>智谱清言</h2>
-                <p>自然语言处理工具</p>
-            </a>
-            <a href="https://kimi.moonshot.cn/" class="card" target="_blank">
-                <h2>Kimi</h2>
-                <p>AI助手工具</p>
-            </a>
-            <a href="https://www.wanzhi.com/" class="card" target="_blank">
-                <h2>万知</h2>
-                <p>知识管理平台</p>
-            </a>
-            <a href="https://www.doubao.com/chat/" class="card" target="_blank">
-                <h2>豆包插件</h2>
-                <p>智能聊天插件</p>
-            </a>
-        </div>
-
-        <h2>AI办公</h2>
-        <div class="grid-container">
-            <a href="https://www.doubao.com/chat/" class="card" target="_blank">
-                <h2>豆包插件</h2>
-                <p>智能聊天插件</p>
-            </a>
-            <a href="https://tingwu.aliyun.com/" class="card" target="_blank">
-                <h2>通义效率</h2>
-                <p>高效办公工具</p>
-            </a>
-            <a href="https://immersivetranslate.com/" class="card" target="_blank">
-                <h2>沉浸式翻译</h2>
-                <p>智能翻译工具</p>
-            </a>
-            <a href="https://www.elmo.chat/" class="card" target="_blank">
-                <h2>Elmo插件</h2>
-                <p>智能语音助手</p>
-            </a>
-        </div>
-
-        <h2>AI音乐</h2>
-        <div class="grid-container">
-            <a href="https://www.tiangong.cn/" class="card" target="_blank">
-                <h2>天工搜索</h2>
-                <p>智能搜索引擎</p>
-            </a>
-            <a href="https://suno.com/" class="card" target="_blank">
-                <h2>Suno</h2>
-                <p>音乐创作平台</p>
-            </a>
-            <a href="https://music.tiangong.cn/" class="card" target="_blank">
-                <h2>天工AI音乐</h2>
-                <p>智能音乐创作工具</p>
-            </a>
+        <div class="content">
+            <h1>我的收藏</h1>
+            <div id="cards-container"></div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cardsContainer = document.getElementById('cards-container');
+            const addCardButton = document.querySelector('.add-card');
+
+            // 加载卡片配置
+            const loadCards = () => {
+                const cards = JSON.parse(localStorage.getItem('cards') || '[]');
+                cardsContainer.innerHTML = '';
+                cards.forEach(card => {
+                    const cardElement = createCardElement(card.title, card.description);
+                    cardsContainer.appendChild(cardElement);
+                });
+            };
+
+            // 创建卡片元素
+            const createCardElement = (title, description) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                const cardTitle = document.createElement('h3');
+                cardTitle.innerText = title;
+                const cardDescription = document.createElement('p');
+                cardDescription.innerText = description;
+                card.appendChild(cardTitle);
+                card.appendChild(cardDescription);
+                return card;
+            };
+
+            // 添加卡片
+            const addCard = () => {
+                const title = prompt('输入卡片标题:');
+                const description = prompt('输入卡片描述:');
+                if (title && description) {
+                    const cardElement = createCardElement(title, description);
+                    cardsContainer.appendChild(cardElement);
+
+                    const cards = JSON.parse(localStorage.getItem('cards') || '[]');
+                    cards.push({ title, description });
+                    localStorage.setItem('cards', JSON.stringify(cards));
+                }
+            };
+
+            addCardButton.addEventListener('click', addCard);
+
+            // 初次加载卡片
+            loadCards();
+        });
+    </script>
 </body>
 </html>
